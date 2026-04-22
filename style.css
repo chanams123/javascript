@@ -1,3 +1,22 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+main {
+  min-height: 75vh;
+}
+.container {
+  padding: 56px 0;
+}
+.row {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
 input {
   padding: 10px;
   width: 300px;
@@ -10,7 +29,8 @@ button {
   cursor: pointer;
 }
 
-div {
+header,
+footer {
   border: 1px solid black;
   padding: 10px;
   margin: 10px 0;
@@ -24,5 +44,5 @@ ul {
   list-style-type: none;
 }
 .logo__img {
-  max-width: ;
+  width: 200px;
 }
