@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: bisque;
+}
 img {
   width: 100%;
 }
@@ -17,8 +20,10 @@ main {
   max-width: 1250px;
   margin: 0 auto;
 }
-.navbar {
-  display: flex;
+.container { 
+display: flex;
+}
+.ul {
   flex-direction: row;
 }
 input {
