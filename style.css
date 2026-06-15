@@ -5,15 +5,17 @@
 }
 body {
   background-color: bisque;
+  font-family: arial, sans serif;
 }
 img {
   width: 100%;
-}
-main {
-  min-height: 5vh;
+  display: block;
 }
 .container {
-  padding: 56px 0;
+  width: 100%;
+  max-width: 1250 px;
+  margin: 0 auto;
+  padding: 20px;
 }
 .row {
   width: 100%;
@@ -23,13 +25,8 @@ main {
 .container { 
 display: flex;
 }
-.ul {
+.navbar {
   flex-direction: row;
-}
-input {
-  padding: 10px;
-  width: 300px;
-  font-size: 16px;
 }
 
 button {
@@ -38,20 +35,71 @@ button {
   cursor: pointer;
 }
 
-header,
-footer {
-  border: 1px solid black;
-  padding: 10px;
-  margin: 10px 0;
+header {
+  background-color: white;
+  border-bottom: 1px solid #ccc;
 }
-.navbar {
+.header-row {
   display: flex;
-  flex-direction: row;
-  color: red;
-}
-ul {
-  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo__img {
-  width: 200px;
+  width: 80px;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style-type: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.navbar a:hover {
+  color: red;
+}
+main {
+  min-height: 70vh;
+  padding: 40px 0;
+}
+.search-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+input {
+  padding: 10px;
+  width: 300px;
+  max-width: 400px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: progress;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+button:hover {
+  background-color: red;
+}
+select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 40px;
+}
+footer {
+  background-color: #ccc;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
