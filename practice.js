@@ -22,7 +22,6 @@ searchBtn.addEventListener('click', async function() {
             results.innerHTML = "<p>No results found.</p>";
         }
     }
-    let moviesAlphabetically = ['A-Z']
-    let searchBtn= []
-    for (let i = a; i<z; ++i)
+const movies = data.Search;
+movies.sort((a, b) => a.Title.localCompare(b.Title));
 });
