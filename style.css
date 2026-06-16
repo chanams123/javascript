@@ -6,6 +6,10 @@
 body {
   background-color: bisque;
   font-family: arial, sans serif;
+  background-image: url('https://img.freepik.com/free-photo/movie-background-collage_23-2149876003.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 img {
   width: 100%;
@@ -71,6 +75,7 @@ main {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  border: solid gray 10px;
 }
 input {
   padding: 10px;
