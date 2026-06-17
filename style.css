@@ -103,6 +103,9 @@ select {
   border-radius: 40px;
   cursor: cyan;
 }
+#results h3, p {
+  color: white;
+}
 footer {
   background-color: #18939782;
   color: white;
