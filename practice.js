@@ -18,7 +18,7 @@ searchBtn.addEventListener('click', async function() {
                 `<div>
                     <h3>${movie.Title}</h3>
                     <p>${movie.Year}</p>
-                    <img>${movie.img}
+                    <img src="${movie.Poster}" alt ="${movie.Title}"> 
                     </div>`;
                 });
             } else {

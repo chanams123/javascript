@@ -10,6 +10,9 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 img {
   width: 100%;
@@ -66,8 +69,9 @@ header {
   color: cyan;
 }
 main {
-  min-height: 70vh;
+  min-height: 20vh;
   padding: 40px 0;
+  flex: 1;
 }
 .search-container {
   display: flex;
@@ -103,8 +107,17 @@ select {
   border-radius: 40px;
   cursor: cyan;
 }
+#results {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
 #results h3, p {
   color: white;
+}
+#results img{
+  width: 100px;
+  height: 120px;
 }
 footer {
   background-color: #18939782;
