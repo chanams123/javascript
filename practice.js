@@ -2,6 +2,7 @@ const searchBtn = document.getElementById('searchBtn')
 const searchInput = document.getElementById('searchInput')
 const results = document.getElementById('results')
 const filter = document.getElementById('filter');
+const allMovies = null
 
 searchBtn.addEventListener('click', async function() {
     const query = searchInput.value;
@@ -11,15 +12,19 @@ searchBtn.addEventListener('click', async function() {
         );
         const data = await response.json();
         if (data.Search) {
-            const movies = data.Search;
-            const filterValue = filter.value;
-            if (filterValue === 'az') {
-                movies.sort((a, b) => a.Title.localeCompare(b.Title));
-            } else if (filterValue === 'za') {
-                movies.sort((a, b) => b.Title.localeCompare(a.Title));
-            }
+            allMovies = data.Search;
+        } else {
+            allMovies = []
+        }
+            // const movies = data.Search;
+            // const filterValue = filter.value;
+            // if (filterValue === 'az') {
+            //     movies.sort((a, b) => a.Title.localeCompare(b.Title));
+            // } else if (filterValue === 'za') {
+            //     movies.sort((a, b) => b.Title.localeCompare(a.Title));
+            // }
             results.innerHTML = "";
-            movies.forEach(function(movie) {
+            allMovies.forEach(function(movie) {
                 results.innerHTML +=
                 `<div>
                 <h3>${movie.Title}</h3>
@@ -32,4 +37,4 @@ searchBtn.addEventListener('click', async function() {
             }
         }
         
-    });
+    );
