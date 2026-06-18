@@ -125,3 +125,68 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
+@media (max-width: 992px) {
+  #results {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .header-row {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .search-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  input,
+  select,
+  button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #results {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+
+  .container {
+    padding: 10px;
+  }
+
+  .logo__img {
+    width: 60px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #results {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button,
+  input,
+  select {
+    font-size: 14px;
+  }
+}
