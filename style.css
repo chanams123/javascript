@@ -54,6 +54,17 @@ header {
 .logo__img {
   width: 80px;
 }
+.Title {
+  color: rgb(158, 158, 196);
+  font-size: 20px;
+  text-align: center;
+}
+.para {
+  font-style: italic;
+  color: rgb(75, 133, 133);
+  text-align: center;
+  font-size: 40px;
+}
 .navbar ul {
   display: flex;
   flex-direction: row;
@@ -80,6 +91,7 @@ main {
   align-items: center;
   margin-bottom: 20px;
   border: solid gray 10px;
+  align-items: center;
 }
 input {
   padding: 10px;
@@ -118,6 +130,9 @@ select {
 #results img{
   width: 100px;
   height: 120px;
+}
+select#filter:hover {
+  background-color: cyan;
 }
 footer {
   background-color: #18939782;

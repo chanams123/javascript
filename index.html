@@ -25,22 +25,29 @@
     </nav>
   </div>
 </div>
-    
+
 </header>
 
 <main>
-    <section class="search-section">
+    
+    <div class=Title>
+    <h3>Moovies.com</h3>
+</div>
+<div class="para">
+<p>A huge collection of movies at your fingertips</p>
+</div>
+<section class="search-section">
         <div class="container">
             <div class="search-container">
                 <input type="text" id="searchInput" placeholder="Search thousand of movies">
                 <button id="searchBtn">Search</button>
                 
             </div>
-           </div> 
-           <select id="filter" onchange="sortMovies(event)">
+        </div> 
+        <select id="filter" onchange="sortMovies(event)">
             <option value ="a-z">A-Z</option>
             <option value ="z-a">Z-A</option>
-           </select>
+        </select>
         </section>  
     </main>
         <div id="results"></div>
