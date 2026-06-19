@@ -91,7 +91,8 @@ main {
   align-items: center;
   margin-bottom: 20px;
   border: solid gray 10px;
-  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 input {
   padding: 10px;
